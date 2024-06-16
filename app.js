@@ -22,13 +22,6 @@ function tripOptions() {
 }
 
 
-var typed = new Typed('#goa', {
-    strings: ['Goa!', "Goa!"],
-    typeSpeed: 200,
-    startDelay: 50,
-    backDelay: 700,
-    loop: true
-});
 
 
 // import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
