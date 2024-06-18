@@ -1,0 +1,379 @@
+const destinationSchema = new mongoose.Schema({
+    pickup: {
+        type: String,
+        required: true
+    },
+    
+    "Cab Type": "String",
+    "Cab Name":"String",
+    "Distance":"String",
+    "Toll Charges":"String",
+    "Driver Charges":"String",
+    "Night Charges": "String",
+
+    destinations: [
+        {
+            "destination": "Anjuna Beach Goa",
+            "distance": "46.12 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Baga Goa",
+            "distance": "40.89 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Calangute Goa",
+            "distance": "38.65 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Mopa Airport",
+            "distance": "57.43 Kilometers",
+            "sedanFare": "2000 INR",
+            "suvFare": "2500 INR"
+        },
+        {
+            "destination": "Arpora",
+            "distance": "40.02 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Ashwem",
+            "distance": "56.55 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Assagao Goa",
+            "distance": "41.54 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Candolim Goa",
+            "distance": "37.32 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Dona Paula Goa",
+            "distance": "28.94 Kilometers",
+            "sedanFare": "1100 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Mapusa",
+            "distance": "38.81 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Mandrem",
+            "distance": "54.99 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Miramar Goa",
+            "distance": "28.05 Kilometers",
+            "sedanFare": "1100 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Morjim",
+            "distance": "53.81 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Nagoa",
+            "distance": "37.92 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Nerul Goa",
+            "distance": "35.66 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1500 INR"
+        },
+        {
+            "destination": "Panjim",
+            "distance": "28.36 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Raibander",
+            "distance": "29.05 Kilometers",
+            "sedanFare": "1100 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Saligao",
+            "distance": "35.59 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Siolim",
+            "distance": "48.30 Kilometers",
+            "sedanFare": "1600 INR",
+            "suvFare": "1900 INR"
+        },
+        {
+            "destination": "Sinquerim",
+            "distance": "38.64 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Taligao",
+            "distance": "28.07 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Thivim",
+            "distance": "43.45 Kilometers",
+            "sedanFare": "1500 INR",
+            "suvFare": "1800 INR"
+        },
+        {
+            "destination": "Vagator",
+            "distance": "43.73 Kilometers",
+            "sedanFare": "1400 INR",
+            "suvFare": "1700 INR"
+        },
+        {
+            "destination": "Porvorim",
+            "distance": "32.25 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1500 INR"
+        },
+        {
+            "destination": "Sangolda",
+            "distance": "32.03 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1500 INR"
+        },
+        {
+            "destination": "Parra Goa",
+            "distance": "37.21 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Assanora",
+            "distance": "50.16 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Advualpal",
+            "distance": "51.88 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Agonda",
+            "distance": "63.29 Kilometers",
+            "sedanFare": "2100 INR",
+            "suvFare": "2500 INR"
+        },
+        {
+            "destination": "Benaulim",
+            "distance": "26.54 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Bicholim",
+            "distance": "52.06 Kilometers",
+            "sedanFare": "1900 INR",
+            "suvFare": "2200 INR"
+        },
+        {
+            "destination": "Colva",
+            "distance": "22.30 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Colvale",
+            "distance": "43.92 Kilometers",
+            "sedanFare": "1500 INR",
+            "suvFare": "1800 INR"
+        },
+        {
+            "destination": "Dabolim Airport",
+            "distance": "0 Kilometers",
+            "sedanFare": "0 INR",
+            "suvFare": "0 INR"
+        },
+        {
+            "destination": "Margao",
+            "distance": "27.58 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Mobor",
+            "distance": "37.74 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Mangueshi",
+            "distance": "34.49 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Navelim",
+            "distance": "28.70 Kilometers",
+            "sedanFare": "1100 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Nuvem Goa",
+            "distance": "21.81 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Old Goa",
+            "distance": "26.00 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1200 INR"
+        },
+        {
+            "destination": "Palolem",
+            "distance": "63.22 Kilometers",
+            "sedanFare": "2100 INR",
+            "suvFare": "2500 INR"
+        },
+        {
+            "destination": "Patnem",
+            "distance": "63.61 Kilometers",
+            "sedanFare": "2200 INR",
+            "suvFare": "2600 INR"
+        },
+        {
+            "destination": "Ponda",
+            "distance": "30.74 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1400 INR"
+        },
+        {
+            "destination": "Varca Goa",
+            "distance": "28.01 Kilometers",
+            "sedanFare": "1100 INR",
+            "suvFare": "1300 INR"
+        },
+        {
+            "destination": "Quepem",
+            "distance": "39.72 Kilometers",
+            "sedanFare": "1400 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Canacona",
+            "distance": "62.83 Kilometers",
+            "sedanFare": "2100 INR",
+            "suvFare": "2400 INR"
+        },
+        {
+            "destination": "Cavelossim",
+            "distance": "34.86 Kilometers",
+            "sedanFare": "1300 INR",
+            "suvFare": "1600 INR"
+        },
+        {
+            "destination": "Majorda",
+            "distance": "18.36 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1100 INR"
+        },
+        {
+            "destination": "Curtorim",
+            "distance": "32.03 Kilometers",
+            "sedanFare": "1200 INR",
+            "suvFare": "1500 INR"
+        },
+        {
+            "destination": "Raj Bhag Goa",
+            "distance": "43.60 Kilometers",
+            "sedanFare": "1700 INR",
+            "suvFare": "2000 INR"
+        },
+        {
+            "destination": "Betalbetim",
+            "distance": "19.99 Kilometers",
+            "sedanFare": "1000 INR",
+            "suvFare": "1100 INR"
+        },
+        {
+            "destination": "Betul Goa",
+            "distance": "42.81 Kilometers",
+            "sedanFare": "1400 INR",
+            "suvFare": "1800 INR"
+        },
+        {
+            "destination": "Utorda",
+            "distance": "17.38 Kilometers",
+            "sedanFare": "900 INR",
+            "suvFare": "1100 INR"
+        }
+    ]
+});
+  
+  
+  
+  destinations: [
+    {
+        "destination": "String",
+        "distance": "String",
+        "sedanFare": "String",
+        "suvFare": "String"
+    },
+]
+
+
+
+//   const results = await Destination.find({
+//     pickup: pickup,
+//     destinations: {
+//       $elemMatch: {
+//         destination: destinationName
+//       }
+//     }
+//   });
+
+
+
+// Aggregation
+
+// [
+//     {
+//       $unwind: {
+//         path: "$destinations",
+//       }
+//     },
+//     {
+//       $addFields: {
+//         destination: "$destinations.destination"
+//       }
+//     },
+//     {
+//       $match: {
+//         pickup: "margoa", 
+//         "destination": "Mopa Airport"
+//       }
+//     }
+//   ]
